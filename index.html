@@ -55,14 +55,14 @@
       <label for="sortButtonDesc">Сортировать по убыванию цены</label>
       <div id="price-range">
         <label class="form-label">От</label>
-        <input type="range" class="form-range" :min="0" :max="maxPrice" step="1" v-model="minPrice">
+        <input type="range" class="form-range" min="0" max="1000" step="1" v-model="minPrice">
         <span id="lower-value">{{ minPrice }} $</span>
       </div>
       <div id="price-range">
         <label class="form-label">До</label>
-        <input type="range" class="form-range" :min="minPrice" :max="1000" step="1" v-model="maxPrice">
+        <input type="range" class="form-range" min="0" max="1000" step="1" v-model="maxPrice">
         <span id="upper-value">{{ maxPrice }} $</span>
-      </div>      
+      </div>           
     <div class="row">
       <div v-for="product in filteredProducts" class="col-lg-3 col-md-6 mb-4">
         <div class="card shadow h-100">

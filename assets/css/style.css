@@ -24,6 +24,10 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.180);
 }
 
+.container {
+    min-width: 1000px;
+  }  
+
 .dark-theme-header {
     background-color: #000000;
     color: white;
